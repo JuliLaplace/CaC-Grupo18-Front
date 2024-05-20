@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+/*TITULOS*/
+.title{
+    text-align: center;
+}
+h1, h2, h4, .nav-link {
+    color: darkgreen;
+}
+
+/*BARRA NAVEGACION*/
+.nav-link:hover{
+    font-weight:bold;
+    color: rgb(46, 125, 62);
+}
+.container-fluid{
+    background-color: rgb(160, 189, 160);
+}
+/*IMAGENES*/
+.img-people{
+    width: 214px;
+    height:320px;
+}
+
+/*PARRAFOS*/
+p{
+    margin: 0px 20px;
+    text-align: justify;
+}
+/*CAJAS*/
+.box{
+    display: flex;
+    justify-content: center;
+}
+
+.box-products, .box-img{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+/*FOOTER*/
+footer{
+    margin-top: 10px;
+    padding: 5px 0; 
+    background-color: rgb(160, 189, 160);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer p, footer a{
+    color: darkgreen;
+}
+.icons {
+    margin-right: 10px; 
+}
+
+
