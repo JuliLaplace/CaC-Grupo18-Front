@@ -6,15 +6,19 @@ body {
     flex-direction: column;
     height: 100vh;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 /*TITULOS*/
 .title{
     text-align: center;
 }
-h1, h2, h4, h5, .nav-link {
+h1, h2, h5, .nav-link {
     color: darkgreen;
 }
 
+  
 /*BARRA NAVEGACION*/
 .nav-link:hover{
     font-weight:bold;
@@ -31,16 +35,23 @@ h1, h2, h4, h5, .nav-link {
     border-color: darkgreen;
     background-color: rgb(160, 188, 172);
     padding: 20px;
+    width: 60%; /* Establece el ancho del formulario */
+    text-align: center;
+   
 }
 .div-form {
     display: flex;
     flex-direction: column;
     align-items: center; 
     margin-top: 20px; 
-    
 }
-
-
+/*CARRUSEL*/
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px; 
+    border-radius: 10px; 
+    color: white; 
+}
 /*IMAGENES*/
 .img-people{
     width: 214px;
@@ -83,10 +94,18 @@ p{
     justify-content: space-around;
     margin: 10px 0;
 }
-.box-form {
-    width: 50%; 
-    margin-bottom: 20px;
+
+
+/*BOTONES*/
+.btn-product{
+    border-radius: 5px;
+    background-color: rgb(160, 189, 160);
+    border-color: rgb(74, 141, 118);
 }
+.btn-product:hover{
+    background-color: rgb(141, 189, 141);
+}
+
 
 /*FOOTER*/
 footer{
