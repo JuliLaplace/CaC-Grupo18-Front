@@ -8,6 +8,7 @@
   <title>Vivero Recalame</title>
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./assets/img/Iconos/favicon.ico">
   <script src="./js/bootstrap.min.js"></script>
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,46 +17,26 @@
 </head>
 
 <body>
-
   <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">
-          <img src="./assets/img/1x/logo-medium.png" alt="Logo" class=" img-logo d-inline-block align-text-top">
-        </a>
-        <!---->
-        <!-- Botón de hamburguesa para dispositivos móviles -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!---->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./productos.html">Productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contacto.html">Contacto</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
-            <a href="#" class="btn btn-outline-primary ms-2">
-              <i class="fa-solid fa-cart-shopping fa-xs"></i>
-            </a>
-          </form>
-        </div>
-      </div>
+    <a class="navbar-brand" href="./index.html">
+      <img src="./assets/img/1x/logo-medium.png" alt="Logo" class="logo">
+    </a>
+    <nav>
+      <a href="./index.html">Inicio</a>
+      <a href="./nosotros.html">Nosotros</a>
+      <a href="./productos.html">Productos</a>
+      <a href="./contacto.html">Contacto</a>
     </nav>
-  </header>
+    <div class="search-container">
+      <input type="text" placeholder="Buscar..." class="search-input">
+      <button type="button" class="search-button">Buscar</button>
+      <button type="button" class="carrito-button">
+        <i class="fa-solid fa-cart-shopping fa-xs"></i>
+      </button>
+    </div>
+
+  </header>  
+
 
   <main>
     <div class="title">
@@ -67,7 +48,7 @@
       <div class="card">
         <img src="./assets/img/IMG/planta6.png" alt="Imagen de primer producto" style="width:100%">
         <div class="container">
-          <h5>Cactus Individuales</h4>
+          <h5>Cactus Individuales</h5>
           <p>Cactus en una presentación única. Pensados para decorar ambientes con un diseño elegante.</p>
           <br>
           <button class="btn-product">Agregar al carrito</button>
@@ -76,7 +57,7 @@
       <div class="card">
         <img src="./assets/img/IMG/planta12.jpg" alt="Imagen de segundo producto" style="width:100%">
         <div class="container">
-          <h5>Lantana</h4>
+          <h5>Lantana</h5>
           <p>Descripción de la tarjeta. Puedes incluir aquí cualquier texto que desees.</p>
           <br>
           <button class="btn-product">Agregar al carrito</button>
@@ -85,7 +66,7 @@
       <div class="card">
         <img src="./assets/img/IMG/planta11.jpg" alt="Imagen de la tarjeta" style="width:100%">
         <div class="container">
-          <h5>Tulipanes</h4>
+          <h5>Tulipanes</h5>
           <p>Descripción de la tarjeta. Puedes incluir aquí cualquier texto que desees.</p>
           <br>
           <button class="btn-product">Agregar al carrito</button>
@@ -97,7 +78,7 @@
       <div class="card">
         <img src="./assets/img/IMG/plantaa1.jpg" alt="Imagen de la tarjeta" style="width:100%">
         <div class="container">
-          <h5>Monstera</h4>
+          <h5>Monstera</h5>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quos incidunt, et qui quod ipsum perferendis.</p>
           <br>
           <button class="btn-product">Agregar al carrito</button>
@@ -106,7 +87,7 @@
       <div class="card">
         <img src="./assets/img/IMG/planta13.jpg" alt="Imagen de la tarjeta" style="width:100%">
         <div class="container">
-          <h5>Cosmos</h4>
+          <h5>Cosmos</h5>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quos incidunt, et qui quod ipsum perferendis.</p>
           <br>
           <button class="btn-product">Agregar al carrito</button>
@@ -115,7 +96,7 @@
       <div class="card">
         <img src="./assets/img/IMG/planta7.jpg" alt="Imagen de la tarjeta" style="width:100%">
         <div class="container">
-          <h5>Planta de la moneda</h4>
+          <h5>Planta de la moneda</h5>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quos incidunt, et qui quod ipsum perferendis.</p>
           <br>
           <button class="btn-product">Agregar al carrito</button>
@@ -127,7 +108,7 @@
       <div class="card">
         <img src="./assets/img/IMG/planta10.jpg" alt="Imagen de la tarjeta" style="width:100%">
         <div class="container">
-          <h5>Rosas</h4>
+          <h5>Rosas</h5>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quos incidunt, et qui quod ipsum perferendis.</p>
           <br>
           <button class="btn-product">Agregar al carrito</button>
@@ -136,7 +117,7 @@
       <div class="card">
         <img src="./assets/img/IMG/planta9.jpg" alt="Imagen de la tarjeta" style="width:100%">
         <div class="container">
-          <h5>Paleta de pintor</h4>
+          <h5>Paleta de pintor</h5>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quos incidunt, et qui quod ipsum perferendis.</p>
           <br>
           <button class="btn-product">Agregar al carrito</button>
@@ -145,7 +126,7 @@
       <div class="card">
         <img src="./assets/img/IMG/planta2.png" alt="Imagen de la tarjeta" style="width:100%">
         <div class="container">
-          <h5>Suculentas</h4>
+          <h5>Suculentas</h5>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quos incidunt, et qui quod ipsum perferendis.</p>
           <br>
           <button class="btn-product">Agregar al carrito</button>
@@ -161,18 +142,11 @@
 
 
 
-
-
-
   <footer>
-    <p>
-      <a class="icons" href="mailto:dec2328@gmail.com" target="_blank"> <i class="fa-regular fa-envelope"></i></a>
-      <a class="icons" href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
-      <a class="icons"
-        href="https://wa.me/3512695088?text=Hola%20Vivero%20Recalame!%20Quería consultar%20por%20el/los%20siguiente/s%20productos:"
-        target="_blank"> <i class="fa-brands fa-whatsapp"></i></a>
-    </p>
-    <p> CaC - Todos los derechos reservados @2024 </p>
+    <a class="icons" href="mailto:dec2328@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+    <a class="icons" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a class="icons" href="https://wa.me/3512695088?text=Hola%20Vivero%20Recalame!%20Quería%20consultar%20por%20el/los%20siguiente/s%20productos:" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <p class="footer-text">CaC - Todos los derechos reservados @2024</p>
   </footer>
 
 

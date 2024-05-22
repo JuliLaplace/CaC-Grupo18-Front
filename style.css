@@ -10,6 +10,71 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+
+/*HEADER*/
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+nav {
+    display: inline-block;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+nav a:visited {
+    color: #96c99e;
+}
+.logo {
+    max-width: 100px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.search-container {
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+.search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    width: 200px;
+}
+.search-button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+.carrito-button {
+    padding: 8px 15px;
+    background-color: #4f6ce1;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.search-button:hover {
+    background-color: #45a049;
+}
+.carrito-button:hover {
+    background-color: #4848cf;
+}
+
+/**/
+
+
 /*TITULOS*/
 .title{
     text-align: center;
@@ -17,16 +82,9 @@ body {
 h1, h2, h5, .nav-link {
     color: darkgreen;
 }
-
-  
-/*BARRA NAVEGACION*/
-.nav-link:hover{
-    font-weight:bold;
-    color: rgb(46, 125, 62);
-}
-.container-fluid{
-    background-color: rgb(160, 189, 160);
-}
+ .video{
+    height: 500px;
+ }
 
 /*FORMULARIO*/
 .form-contacto{
@@ -35,10 +93,10 @@ h1, h2, h5, .nav-link {
     border-color: darkgreen;
     background-color: rgb(160, 188, 172);
     padding: 20px;
-    width: 60%; /* Establece el ancho del formulario */
-    text-align: center;
-   
+    width: 60%;
+    text-align: center; 
 }
+
 .div-form {
     display: flex;
     flex-direction: column;
@@ -46,12 +104,7 @@ h1, h2, h5, .nav-link {
     margin-top: 20px; 
 }
 /*CARRUSEL*/
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5); 
-    padding: 20px; 
-    border-radius: 10px; 
-    color: white; 
-}
+
 /*IMAGENES*/
 .img-people{
     width: 214px;
@@ -61,6 +114,8 @@ h1, h2, h5, .nav-link {
     width:60px;
     height:60px;
 }
+
+
 /*PARRAFOS*/
 p{
     margin: 0px 20px;
@@ -69,21 +124,64 @@ p{
 
 /*TARJETAS - CARDS*/
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 4px rgba(0,0,0,50%);
     transition: 0.3s;
     width: 300px;
+    position: relative;
+    transform: scale(0.8);
 }
-  
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,100%);
+    transform: scale(1);
+    transition: all 1s ease;
 }
   
 .container {
     padding: 20px;
 }
+.container-section{
+    display: flex;
+    flex-direction: column;    
+}
 
+.container-section h2{
+    text-align: center;
+}
+.container-section p{
+    text-align: justify;
+    font-style: italic;
+    color: rgb(91, 89, 89);
+    font-size:small;
+}
+
+/*BANNER*/
+.container-section-div{
+    display: flex;
+    flex-direction: row;
+}
+.caja-borde{
+    border-right-color: black;
+    border-right-style: solid;
+}
+
+.caja-banner h5,  .caja-banner p{
+    display: block;
+    font-size: medium;
+}
+.caja-banner {
+    padding: 10px;
+    margin: 10px;
+}
+.icono-banner{
+    display: inline;
+}
+.caja-banner p{
+    padding: 10px;
+    font-size: small;
+}
 /*CAJAS*/
 .box, .box-map{
+    width: 100vw;
     display: flex;
     justify-content: center;
 }
@@ -106,21 +204,25 @@ p{
     background-color: rgb(141, 189, 141);
 }
 
-
 /*FOOTER*/
-footer{
-    margin-top: 10px;
-    padding: 5px 0; 
-    background-color: rgb(160, 189, 160);
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
     display: flex;
     justify-content: center;
 }
-
-footer p, footer a{
-    color: darkgreen;
-}
 .icons {
-    margin-right: 10px; 
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
 }
-
+.icons:hover {
+    opacity: 0.7;
+}
+.footer-text {
+    margin-top: 5px;
+    color: #fff;
+}
 
