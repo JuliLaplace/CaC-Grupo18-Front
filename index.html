@@ -14,17 +14,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  
+
 </head>
 
 <body>
-  <div id="popup" class="popup">
-    <div class="popup-content">
-      <span class="close" onclick="cerrarPopup()">&times;</span>
-      <h2>Bienvenido a Mi Vivero</h2>
-      <p>¡Gracias por visitarnos! Descubre nuestras últimas noticias y productos.</p>
-    </div>
-  </div>
   <header>
     <a class="navbar-brand" href="./index.html">
       <img src="./assets/img/1x/logo-medium.png" alt="Logo" class="logo">
@@ -45,9 +38,7 @@
   </header>
 
   <main>
-    <br>
     <h1 class="title">Vivero plantas y cactus Racalame</h1>
-    <br>
     <div class="container-carrusel">
       <div class="box">
         <div id="carouselExample" class="carousel slide">
@@ -86,35 +77,49 @@
     </div>
 
     <br><br>
-    
+
     <section id="banner-index">
       <div class="container-section-div">
         <div class="caja-borde caja-banner">
-          <i class="fa-regular fa-credit-card fa-xl"></i>
-          <h5>Todos los medios de pago</h5>
-          <p>Realizá tu compra con tarjeta, efectivo o transferencia.</p>
+          <!--<i class="fa-regular fa-credit-card fa-xl"></i>-->
+          <div class="icono-banner">
+            <img src="./assets/img/Iconos/tarjeta.gif" alt="icono tarjetas de credito">
+          </div>
+          <div class="icono-banner">
+            <h5>Medios de pago</h5>
+            <p>Realizá tu compra con tarjeta, efectivo o transferencia.</p>
+          </div>
+
         </div>
 
         <div class="caja-borde caja-banner">
           <div class="icono-banner">
-            <i class="fa-solid fa-truck-fast fa-xl"></i>
+            <!--<i class="fa-solid fa-truck-fast fa-xl"></i>-->
+            <img src="./assets/img/Iconos/camion.gif" alt="icono de cambion de envios">
           </div>
+
           <div class="icono-banner">
             <h5>Envios a todo el país</h5>
             <p>Te contactaremos por WhatsApp para coordinar la entrega de tu pedido.</p>
           </div>
         </div>
+
         <div class="caja-banner">
-          <i class="fa-solid fa-seedling fa-xl"></i>
-          <h5>Asesoramiento y ventas</h5>
-          <p>Con nuestra atención personalizada vas a poder encontrar la mejor planta para tu hogar.</p>
+          <div class="icono-banner">
+            <!--<i class="fa-solid fa-seedling fa-xl"></i>-->
+            <img src="./assets/img/Iconos/planta.gif" alt="icono de planta">
+          </div>
+          <div class="icono-banner">
+            <h5>Asesoramiento y ventas</h5>
+            <p>Con nuestra atención personalizada vas a poder encontrar la mejor planta para tu hogar.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="sobre-nosotros">
-      <divclass="container-section">
-        <h2>Sobre nosotros</h2>
+      <div class="container-section">
+        <h2 class="title">Sobre nosotros</h2>
         <p>En Racalame somos una familia apasionada por la naturaleza y el arte de crear espacios verdes encantadores.
           Hemos cultivado nuestra pasión por las plantas y la jardinería a lo largo de generaciones.br <br>
           Actualmente nos dedicamos a ofrecer una experiencia única en el mundo de la jardinería y la naturaleza en la
@@ -125,21 +130,22 @@
           enorgullecemos de ofrecer plantas de la más alta calidad, cuidadosamente seleccionadas y cultivadas con amor y
           dedicación en nuestras instalaciones.
         </p>
-        <div>
+        <div class="imagenes-index">
           <img src="./assets/img/IMG/nosotros/nosotros4.jpg" alt="Imagen de dueños de Racalame" class="img-people">
           <img src="./assets/img/IMG/nosotros/nosotros5.jpg" alt="Imagen de dueños de Racalame" class="img-people">
         </div>
         <br>
         <h2 class="title">Nuestros Inicios</h2>
         <div class="container-section">
-          <img src="./assets/img/IMG/nosotros/nosotros1.jpg" alt="Imagen vivero Racalame" >
+          <img src="./assets/img/IMG/nosotros/nosotros1.jpg" alt="Imagen vivero Racalame">
           <br>
           <p>Nuestra historia comenzó en 1991, cuando Miguel Racalame con un profundo amor por la naturaleza y el deseo
-            de compartir su pasión con otros, fundó el vivero que lleva su apellido. Con dedicación y perseverancia, Miguel
+            de compartir su pasión con otros, fundó el vivero que lleva su apellido. Con dedicación y perseverancia,
+            Miguel
             transformó un pequeño negocio familiar en un vivero próspero y reconocido en toda la ciudad. Hoy en día, las
             tres hijas de Miguel (Julieta, Daiana y Luisina), continúan el legado de su padre, llevando adelante la
             visión de Racalame con el mismo entusiasmo y compromiso que lo caracterizó.
-          
+
           </p>
         </div>
 
@@ -149,14 +155,11 @@
           <p>
             En Racalame, ofrecemos una amplia gama de servicios diseñados para satisfacer todas tus necesidades de
             jardinería y paisajismo. Desde la selección y cuidado de plantas hasta el diseño y mantenimiento de
-            jardines, nuestro equipo de expertos está aquí para ayudarte a crear espacios verdes que reflejen tu estilo y
-            personalidad. <br> Además, ofrecemos asesoramiento profesional y soluciones a medida para proyectos de todos
-            los tamaños, desde pequeños balcones hasta grandes espacios comerciales. En Racalame, estamos comprometidos a
-            brindarte la más alta calidad en plantas y servicios para hacer de tu experiencia con la naturaleza algo
+            jardines, nuestro equipo de expertos está aquí para ayudarte a crear espacios verdes que reflejen tu estilo
+            y personalidad. <br> Además, ofrecemos asesoramiento profesional y soluciones a medida para proyectos de todos
+            los tamaños, desde pequeños balcones hasta grandes espacios comerciales. En Racalame, estamos comprometidos
+            a brindarte la más alta calidad en plantas y servicios para hacer de tu experiencia con la naturaleza algo
             verdaderamente excepcional.
-            <br>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam eum soluta itaque voluptate eligendi esse
-            cum voluptates. Cumque, quas? Maiores in vitae libero aliquam tempore nulla nobis fuga illum iste!
           </p>
           <br>
           <img src="./assets/img/IMG/nosotros/nosotros2.jpg" alt="personas trabajando en huerta">
@@ -164,7 +167,7 @@
 
         <br>
         <div class="container-section">
-          
+
           <p>En Racalame, nos enorgullece ofrecer soluciones de jardinería que van más allá de lo ordinario. Nuestro
             compromiso es proporcionarte no solo plantas de la más alta calidad, sino también inspiración, creatividad y
             atención al detalle en cada proyecto que emprendemos.
@@ -184,13 +187,13 @@
             aquí para ayudarte a hacer florecer tus sueños de jardinería!
           </p>
         </div>
-      </div>
-      <br>
+        </div>
+        <br>
     </section>
     <section id="about-3">
       <div class="container-section">
         <h2>¡Amamos lo que hacemos!</h2>
-        <video src="./assets/img/Videos/video-1.mp4" autoplay loop class="video"></video>
+        <video src="./assets/img/Videos/video-1.mp4" autoplay loop controls class="video"></video>
         <p class="frase-index">
           "El jardín sugiere la inmortalidad y la eternidad: después de haberse cumplido una vuelta del año, toda su
           belleza parece haber renacido de nuevo fresca y lozana." - Goethe
