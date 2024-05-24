@@ -16,6 +16,7 @@ header {
     background-color: #333;
     color: #fff;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 nav {
@@ -142,15 +143,6 @@ article a, article h3 {
     margin-left: 20px;
 }
 /*IMAGENES*/
-
-.img-people{
-    height:550px;
-    padding: 5px 10px;
-}
-.imagenes-index{
-    display: flex;
-    justify-content: center;
-}
 
 .img-logo{
     width:60px;
