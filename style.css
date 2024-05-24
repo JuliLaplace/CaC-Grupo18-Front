@@ -15,11 +15,14 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 nav {
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 30px;
 }
 nav a {
     color: #fff;
@@ -36,12 +39,16 @@ nav a:visited {
     justify-content: flex-start;
 }
 .logo {
+    flex-wrap: wrap;
     max-width: 100px;
+    margin: 10px;
 }
 .search-container {
-    display: inline-block;
-    margin-left: 20px;
-    vertical-align: middle;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 30px;
 }
 
 .search-input {
@@ -51,20 +58,22 @@ nav a:visited {
     width: 200px;
 }
 .search-button {
-    padding: 8px 15px;
+    padding: 9px 15px;
     background-color: #4CAF50;
     border: none;
     color: white;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
+    
 }
 .carrito-button {
-    padding: 8px 15px;
+    padding: 9px 15px;
     background-color: #4f6ce1;
     border: none;
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: 10px;
 }
 .search-button:hover {
     background-color: #45a049;
