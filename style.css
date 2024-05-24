@@ -102,12 +102,18 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center; 
-    margin-top: 20px; 
+}
+.boton-formulario{
+    border-radius: 10px;
 }
 /*ARTICULOS*/
 
 article {
-    margin-bottom: 30px;
+    margin: 30px;
+    border-style:solid;
+    border-color: #99cda8;
+    border-radius: 10px;
+    
 }
 article p {
     font-size: 16px;
@@ -119,10 +125,12 @@ article img {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
-  }
+    margin-left: 20px;
+}
   
-article a {
+article a, article h3 {
     color: darkgreen; 
+    margin-left: 20px;
 }
 /*IMAGENES*/
 
@@ -213,6 +221,7 @@ p{
     width: 100vw;
     display: flex;
     justify-content: center;
+    margin-bottom: 25px;
 }
 
 .box-products{
@@ -235,11 +244,11 @@ p{
     font-size: 16px;
     border-radius: 5px; 
     cursor: pointer; 
-  }
+}
   
-  .btn-product:hover {
+.btn-product:hover {
     background-color: #45a049;
-  }
+}
 
 /*FOOTER*/
 footer {
