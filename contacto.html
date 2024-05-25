@@ -35,72 +35,76 @@
     </div>
 
   </header>
-
-
   <h1 class="title">Contacto</h1>
-
-  <div class="div-form">
-    <form action="#" method="post" target="_blank" class="form-contacto">
-      <div class="box-form">
-        <i class="fas fa-spa" style="color: #1d5947;"></i>
-        <label for="firstname">Nombre: </label>
-        <input type="text" name="firstname" id="firstname" required>
-        <br><br>
-        <i class="fas fa-seedling" style="color: #1d5947;"></i>
-        <label for="lastname">Apellido: </label>
-        <input type="text" name="lastname" id="lastname" required>
-        <br><br>
-        <i class="fab fa-pagelines" style="color: #1d5947;"></i>
-        <label for="email">E-mail: </label>
-        <input type="email" name="email" id="email" required>
+  
+  <div class="contenedor-form">
+    <div class="div-form">
+      <form action="#" method="post" target="_blank">
+        <div class="box-form">
+          <i class="fas fa-spa" style="color: #1d5947;"></i>
+          <label for="firstname">Nombre: </label>
+          <input type="text" name="firstname" id="firstname" required>
+          <br><br>
+          <i class="fas fa-seedling" style="color: #1d5947;"></i>
+          <label for="lastname">Apellido: </label>
+          <input type="text" name="lastname" id="lastname" required>
+          <br><br>
+          <i class="fab fa-pagelines" style="color: #1d5947;"></i>
+          <label for="email">E-mail: </label>
+          <input type="email" name="email" id="email" required>
+          <br>
+        </div>
+  
         <br>
+        <div class="box-form">
+          <fieldset>
+            <legend>¿Querés suscribirte a nuestro newsletter?</legend>
+            <input type="radio" id="si" name="opcion" value="si" checked />
+            <label for="si">Si</label>
+            <input type="radio" id="no" name="opcion" value="no" />
+            <label for="no">No</label>
+          </fieldset>
+        </div>
+        <br>
+        <div class="box-form">
+          <i class="fas fa-tree" style="color: #1d5947;"></i>
+          <label for="seleccion">Consulta:</label>
+          <select id="seleccion" name="seleccion">
+            <option value="presupuesto" selected>Presupuesto</option>
+            <option value="venta">Venta Mayorista</option>
+            <option value="contacto">Contacto</option>
+          </select>
+          <br><br>
+          <i class="fas fa-leaf" style="color: #1d5947;"></i>
+          <label for="Comentarios">Mensaje: </label> <br>
+          <textarea name="Comentarios" rows="10" >Escribe tu mensaje...</textarea>
+        </div>
+        <br>
+        <div class="box-form">
+          <i class="fab fa-canadian-maple-leaf" style="color: #1d5947;"></i>
+          <label for="imagen">Cargar imagen: </label>
+          <input type="file" name="imagen" id="imagen" required>
+          <br><br>
+          <input type="submit" value="Enviar" class="boton-formulario">
+          <input type="reset" value="Borrar" class="boton-formulario">
+        </div>
+  
+      </form>
+    </div>
+    <br>
+    <div class="box-map">
+      <h5 class="title">Nos encontras en:</h5>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.1904951550214!2d-58.38831666107742!3d-34.594526285268806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccab9667f3b9f%3A0x908dd041185c3496!2sArenales%201385%2C%20C1061AAM%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1715723088198!5m2!1ses!2sar"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <div class="gif-formulario">
+        <img src="./assets/img/Iconos/locacion.gif" alt="gif animado de bicacion">
       </div>
-
-      <br>
-      <div class="box-form">
-        <fieldset>
-          <legend>¿Querés suscribirte a nuestro newsletter?</legend>
-          <input type="radio" id="si" name="opcion" value="si" checked />
-          <label for="si">Si</label>
-          <input type="radio" id="no" name="opcion" value="no" />
-          <label for="no">No</label>
-        </fieldset>
-      </div>
-      <br>
-      <div class="box-form">
-        <i class="fas fa-tree" style="color: #1d5947;"></i>
-        <label for="seleccion">Consulta:</label>
-        <select id="seleccion" name="seleccion">
-          <option value="presupuesto" selected>Presupuesto</option>
-          <option value="venta">Venta Mayorista</option>
-          <option value="contacto">Contacto</option>
-        </select>
-        <br><br>
-        <i class="fas fa-leaf" style="color: #1d5947;"></i>
-        <label for="Comentarios">Mensaje: </label> <br>
-        <textarea name="Comentarios" rows="10" >Escribe tu mensaje...</textarea>
-      </div>
-      <br>
-      <div class="box-form">
-        <i class="fab fa-canadian-maple-leaf" style="color: #1d5947;"></i>
-        <label for="imagen">Cargar imagen: </label>
-        <input type="file" name="imagen" id="imagen" required>
-        <br><br>
-        <input type="submit" value="Enviar" class="boton-formulario">
-        <input type="reset" value="Borrar" class="boton-formulario">
-      </div>
-
-    </form>
-  </div>
-
-  <br>
-  <h5 class="title">Nos encontras en:</h5>
-  <div class="box-map">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.1904951550214!2d-58.38831666107742!3d-34.594526285268806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccab9667f3b9f%3A0x908dd041185c3496!2sArenales%201385%2C%20C1061AAM%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1715723088198!5m2!1ses!2sar"
-      width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+      
+    </div>
+  
   </div>
 
 

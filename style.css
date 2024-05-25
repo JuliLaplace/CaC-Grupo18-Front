@@ -93,42 +93,51 @@ nav a:visited {
 h1, h2, h5, .nav-link {
     color: darkgreen;
 }
-h1{
-    padding: 30px 0px;    
-}
+
 
 /*FORMULARIO*/
-.form-contacto{
+.contenedor-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+.div-form{
     border-style:solid;
     border-radius: 5px;
     border-color: darkgreen;
     background-color: rgb(160, 188, 172);
     padding: 20px;
-    width: 60%;
     text-align: center; 
 }
-
-.div-form {
+.box-map{
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 }
+
 .boton-formulario{
     border-radius: 10px;
+    padding: 5px;
 }
+
+.gif-formulario{
+    margin: 20px;
+}
+
+
 /*ARTICULOS*/
 
 article {
     margin: 30px;
+    padding: 10px;
     background-color:rgb(245, 242, 236);
     border-style:solid;
     border-color: #99cda8;
-    border-radius: 10px;
-    
+    border-radius: 10px;   
 }
-article p {
-    font-size: 16px;
-    line-height: 1.6;
+article p{
     margin-bottom: 20px;
 }
 
@@ -141,8 +150,13 @@ article img {
   
 article a, article h3 {
     color: darkgreen; 
-    margin-left: 20px;
+    margin: 20px;
 }
+.blog-indice h2{
+    color: darkgreen; 
+    margin: 20px;
+}
+
 /*IMAGENES*/
 
 .img-logo{
@@ -163,30 +177,7 @@ p{
     text-align: justify;
 }
 
-/*TARJETAS - CARDS*/
-.card {
-    box-shadow: 1px 1px 4px rgba(0,0,0,50%);
-    background-color:rgb(245, 242, 236);
-    transition: 0.3s;
-    width: 300px;
-    position: relative;
-    transform: scale(0.8);
-    text-align: center;
-}
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,100%);
-    transform: scale(1);
-    transition: all 1s ease;
-}
 
-.price-card{
-    font-style: italic;
-    color: #2f6831;
-}
-  
-.container {
-    padding: 20px;
-}
 
 /*INDEX*/
 .carousel-container {
@@ -250,13 +241,32 @@ p{
 }
 
 
-/*CAJAS*/
-.box, .box-map{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 25px;
+/*TARJETAS - CARDS*/
+.card {
+    box-shadow: 1px 1px 4px rgba(0,0,0,50%);
+    background-color:rgb(245, 242, 236);
+    transition: 0.3s;
+    width: 300px;
+    position: relative;
+    transform: scale(0.8);
+    text-align: center;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,100%);
+    transform: scale(1);
+    transition: all 1s ease;
 }
 
+.price-card{
+    font-style: italic;
+    color: #2f6831;
+}
+  
+.container {
+    padding: 20px;
+}
+
+/*CAJAS*/
 .box-products{
     display: flex;
     flex-direction: row;
@@ -306,21 +316,3 @@ footer {
 }
 
 /**/
-
-/*Div redondos*/
-.contenedor-div-redondos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    justify-items:center ;
-    margin: 20px;
-}
-.div-redondo{
-    border-style: groove;
-    border-color: #2f6831;
-    border-radius: 100%;
-    display: flex;
-    background-color: rgb(234, 234, 175);
-    padding: 20px;
-    
-}
