@@ -1,6 +1,8 @@
-const mayusRexEx = /[A-Z]/g
+
 const form = document.forms.form;
 const formButton = document.getElementById("boton-formulario-submit");
+let opciones = document.getElementsByName('opcion');
+let valorSeleccionado;
 
 const resetIcon = (checkIcon, errorIcon) => {
     checkIcon.style.display = "none";
@@ -18,16 +20,17 @@ const activateErrorIcon = (checkIcon, errorIcon) => {
 }
 
 
-
+const mayusRexEx = /[A-Z]/g
 const nameHandleKeyUp = (e, id) => {
 
     const name = e.target.value
+    console.log(name);
     const length = name.match(mayusRexEx)
     console.log(name);
 
     const checkIcon = document.getElementById(`${id}-check`)
     const errorIcon = document.getElementById(`${id}-error`)
-    
+
     if (name.length <= 4)
         resetIcon(checkIcon, errorIcon)
 

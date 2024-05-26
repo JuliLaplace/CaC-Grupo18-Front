@@ -19,11 +19,9 @@ header {
     color: #fff;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 nav {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     margin-left: 30px;
 }
@@ -42,13 +40,11 @@ nav a:visited {
     justify-content: flex-start;
 }
 .logo {
-    flex-wrap: wrap;
     max-width: 80px;
     margin: 10px;
 }
 .search-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
     margin-left: 30px;
@@ -310,7 +306,7 @@ footer {
     color: #fff;
     padding: 20px 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 
 }
 .icons {
@@ -334,6 +330,25 @@ svg{
 
 /*MEDIA QUERIES*/
 @media (max-width:576px){
+    header {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .logo {
+        flex-wrap: wrap;
+        max-width: 80px;
+    }
+    .search-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
 
     /*INDEX*/
     main{ 
@@ -430,9 +445,15 @@ svg{
         display: flex;
         flex-direction: column;
     }
-    .icons {
+    .footer-iconos{
         display: flex;
-        justify-content: center;
+        align-self: center;
+        margin: 10px;
+
+    }
+    .icons {
+        display: inline;
+        align-items: center;
         color: #fff;
         text-decoration: none;
         margin: 0 10px;
@@ -447,3 +468,112 @@ svg{
     }
 
  }
+
+ @media (min-width: 577px) and (max-width: 1024px) {
+    header {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .logo {
+        flex-wrap: wrap;
+        max-width: 80px;
+    }
+    .search-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+     
+    
+    /*FORMULARIO*/
+    .contenedor-form{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .box-map{
+       margin: 20px;
+    }
+    
+
+    
+    /*IMAGENES*/
+    
+    .img-logo{
+        width:60px;
+        height:60px;
+    }
+    .video{
+        height: 300px;
+    }
+    
+    .img-people{
+        width: 60%;
+        height: 60%;
+        padding: 10px;
+    }
+    
+    
+    /*INDEX*/
+    .carousel-container {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        margin: 20px;
+    }
+    #carouselExample{
+       width: 40%;
+       height: 40%;
+    }
+    
+    .container-section{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+    .container-section p{
+       text-align: justify;
+       font-size: medium;
+       padding: 50px;
+    }
+    .container-imagenes{
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        justify-content: center;
+        width: 70%;
+    }
+    .container-imagen{
+        display: flex;
+        justify-content: center;
+    }
+    .container-section h2{
+        text-align: center;
+    }
+    .container-section .frase-index{
+        text-align: justify;
+        font-style: italic;
+        color: rgb(91, 89, 89);
+    }
+    
+    /*BANNER*/
+    .caja-banner{     
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        border: none;
+        margin: 5px;
+        text-align: center;
+    }
+    
+    
+
+}
