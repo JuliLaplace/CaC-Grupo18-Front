@@ -1,9 +1,6 @@
 
 const form = document.forms.form;
 const formButton = document.getElementById("boton-formulario-submit");
-let opciones = document.getElementsByName('opcion');
-let valorSeleccionado;
-
 const resetIcon = (checkIcon, errorIcon) => {
     checkIcon.style.display = "none";
     errorIcon.style.display = "none";
