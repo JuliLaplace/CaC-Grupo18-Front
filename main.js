@@ -27,7 +27,7 @@ const nameHandleKeyUp = (e, id) => {
 
     const checkIcon = document.getElementById(`${id}-check`)
     const errorIcon = document.getElementById(`${id}-error`)
-
+    
     if (name.length <= 4)
         resetIcon(checkIcon, errorIcon)
 

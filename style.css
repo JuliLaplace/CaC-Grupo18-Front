@@ -150,7 +150,7 @@ article p{
 }
 
 article img {
-    max-width: 80%;
+    max-width: 50%;
     height: auto;
     margin-bottom: 20px;
     margin-left: 20px;
@@ -327,9 +327,15 @@ footer {
     color: #fff;
 }
 
+/*SVG*/
+svg{
+    display: none;
+}
 
 /*MEDIA QUERIES*/
 @media (max-width:576px){
+
+    /*INDEX*/
     main{ 
         display: flex;
         flex-direction: column;
@@ -406,6 +412,15 @@ footer {
         flex-direction: column;
     }
 
+    /*BLOG*/
+    article {
+        margin: 5px;
+        padding: 5px; 
+    }
+    article p, article a{
+        margin-bottom: 20px;
+        font-size: smaller;
+    }
 
     /*FOOTER*/
     footer {
