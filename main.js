@@ -3,18 +3,18 @@ const form = document.forms.form;
 const formButton = document.getElementById("boton-formulario-submit");
 
 const resetIcon = (checkIcon, errorIcon) => {
-    checkIcon.style.opacity = '0%';
-    errorIcon.style.opacity = '0%';
+    checkIcon.style.display = "none";
+    errorIcon.style.display = "none";
 }
 
 const activateCheckIcon = (checkIcon, errorIcon) => {
-    checkIcon.style.opacity = '100%';
-    errorIcon.style.opacity = '0%';
+    checkIcon.style.display = "inline";
+    errorIcon.style.display = "none";
 }
 
 const activateErrorIcon = (checkIcon, errorIcon) => {
-    checkIcon.style.opacity = '0%';
-    errorIcon.style.opacity = '100%';
+    checkIcon.style.opacity = 'none';
+    errorIcon.style.display = 'inline';
 }
 
 
@@ -23,6 +23,7 @@ const nameHandleKeyUp = (e, id) => {
 
     const name = e.target.value
     const length = name.match(mayusRexEx)
+    console.log(name);
 
     const checkIcon = document.getElementById(`${id}-check`)
     const errorIcon = document.getElementById(`${id}-error`)
@@ -33,7 +34,7 @@ const nameHandleKeyUp = (e, id) => {
     if (name.length > 4 && length !== null)
         activateCheckIcon(checkIcon, errorIcon)
 
-    if (name.length > 4 && length === null)
+    if (name.length > 10 && length === null)
         activateErrorIcon(checkIcon, errorIcon)
 }
 
@@ -72,7 +73,10 @@ const formButtonHandleClick = (e) => {
         firstname: firstname.value,
         lastname: lastname.value,
         email: email.value,
+        
     }
+
+    console.log(formData);
 }
 
 

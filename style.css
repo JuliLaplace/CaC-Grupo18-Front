@@ -124,6 +124,11 @@ h1, h2, h5, .nav-link {
     border-radius: 10px;
     padding: 5px;
 }
+.boton-formulario:hover{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #99a699;
+}
 
 .gif-formulario{
     margin: 20px;
@@ -145,7 +150,7 @@ article p{
 }
 
 article img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     margin-bottom: 20px;
     margin-left: 20px;
@@ -155,10 +160,11 @@ article a, article h3 {
     color: darkgreen; 
     margin: 20px;
 }
-.blog-indice h2{
-    color: darkgreen; 
+.blog-indice{
     margin: 20px;
+    padding: 20px;
 }
+
 
 /*IMAGENES*/
 
@@ -175,13 +181,6 @@ article a, article h3 {
     height: 60%;
     padding: 10px;
 }
-
-/*PARRAFOS
-p{
-    margin: 0px 20px;
-    text-align: justify;
-}*/
-
 
 
 /*INDEX*/
@@ -312,6 +311,7 @@ footer {
     padding: 20px 0;
     display: flex;
     justify-content: center;
+
 }
 .icons {
     color: #fff;
@@ -327,14 +327,108 @@ footer {
     color: #fff;
 }
 
-/*svg*/
 
-form>svg {
-    position: absolute;
-    width: 2rem;
-    right: 0rem;
-    top: 0;
-}
+/*MEDIA QUERIES*/
+@media (max-width:576px){
+    main{ 
+        display: flex;
+        flex-direction: column;
+        border: 0px;
+        padding: 10px;    
+    }
+
+    .container-imagenes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .container-section-div{ 
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+    .caja-borde{
+        border: 0;   
+    }
+    
+    .caja-banner{     
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .caja-banner{
+        border: none;
+        margin: 5px;
+        text-align: center;
+    }
+    #carouselExample{
+        width: 70%;
+        height: 70%;
+    }
+    .carousel-container {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        margin: 20px;
+    }
+    
+    .container-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-section p{
+       text-align: justify;
+       font-size: smaller;
+       padding: 0;
+    }
+
+    .container-imagen{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-section .frase-index{
+        text-align: justify;
+        font-style: italic;
+        color: rgb(91, 89, 89);
+        font-size: smaller;
+    }
 
 
+    /*FORMULARIO*/
+    .contenedor-form{
+        display: flex;
+        flex-direction: column;
+    }
 
+
+    /*FOOTER*/
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .icons {
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 20px;
+    }
+    .icons:hover {
+        opacity: 0.7;
+    }
+    .footer-text {
+        margin-top: 5px;
+        color: #fff;
+    }
+
+ }
